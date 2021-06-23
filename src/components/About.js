@@ -1,14 +1,26 @@
 import React from 'react';
+import { Row, Col, Image } from 'react-bootstrap';
+
 import classes from './about.module.css';
+import gmail from '../assets/gmail.png';
+
+
 
 const About = props => {
     return (
-        <div className={classes.main} id='about'>
-            {/*TITLE*/}
-            <div>About Me</div>
-            <div>blah blah blah blah</div>
-            <div>links to things</div>
-        </div>
+        <Row className={classes.main} id='about'>
+            <Col>
+                {/*TITLE*/}
+                <div className={classes.title}>About Me</div>
+                <div className={classes.summary}>blah blah blah blah</div>
+                <div className={classes.panel}>
+                    <Image className={classes.icon} src={gmail} height={40} width={40} />
+                    <Image className={classes.icon}  src={gmail} height={40} width={40} />
+                    <Image className={classes.icon}  src={gmail} height={40} width={40} />
+                    <Image className={classes.icon}  src={gmail} height={40} width={40} />
+                </div>
+            </Col>
+        </Row>
     );
 };
 

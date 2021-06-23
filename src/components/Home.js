@@ -7,14 +7,18 @@ import {
 import NavBarC from "./Navbar";
 import About from "./About";
 import Experience from "./Experience";
+import Projects from './Projects';
 
 const Home = props => {
     return (
         <div>
              <NavBarC />
-             <About/>
-             <Experience/>
              
+             <About/>
+             <br/>
+             <Experience/>
+             <br/>
+             <Projects/>
         </div>
     );
 };
