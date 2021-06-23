@@ -3,13 +3,13 @@
     text-align: center
 }
 .title {
-    font-size: 3.0em
+    font-size: 3.0em;
+    text-align: center;
 }
 .summary {
-    font-size: 1.5em
-}
-.panel {
-    
+    text-align: center;
+    font-size: 1.5em;
+   
 }
 .icon {
   display: inline-block;
