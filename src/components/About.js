@@ -8,6 +8,7 @@ import gmail from '../assets/gmail.png';
 import github from '../assets/github.png';
 import cv from '../assets/curriculum-vitae.png';
 import linkedin from '../assets/linkedin.png';
+import gitlab from '../assets/gitlab.png'
 
 
 
@@ -33,10 +34,11 @@ const About = props => {
             <Row>
                 <Col>
                 <div className={classes.panel}>
-                    <Image className={classes.icon} src={gmail} height={40} width={40} />
-                    <Image className={classes.icon}  src={linkedin} height={40} width={40} />
-                    <Image className={classes.icon}  src={github} height={40} width={40} />
-                    <Image className={classes.icon}  src={cv} height={40} width={40} />
+                    <a><Image className={classes.icon} src={gmail} height={40} width={40} /></a>
+                    <a href='https://www.linkedin.com/in/lopezfausto' target='_blank'><Image className={classes.icon}  src={linkedin} height={40} width={40} /></a>
+                    <a href='https://github.com/datafaust' target='_blank'><Image className={classes.icon}  src={github} height={40} width={40} /></a>
+                    <a href='https://gitlab.com/ulysses' target='_blank'><Image className={classes.icon}  src={gitlab} height={40} width={40} /></a>
+                    <a><Image className={classes.icon}  src={cv} height={40} width={40} /></a>
                 </div>
                 </Col>
             </Row>
