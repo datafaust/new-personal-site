@@ -13,7 +13,7 @@ import verycool from '../../assets/veryCoolStudio.jpg';
 
 export const projects = [
     {
-        'image': datahub,
+        'image': dblPark,
         'title': 'A DOUBLE PARKING APP IN REACT',
         'text': 'DoublePark helps you notify someone when you are double parked. This mobile app was written using MySQL, NodeJs, and React-Native.',
         'tag': 'react',
@@ -27,10 +27,10 @@ export const projects = [
         'link': 'https://www.pooper.cloud/'
     },
     {
-        'image': dblPark,
+        'image': datahub,
         'title': 'A DOUBLE PARKING APP IN REACT',
-        'text': 'DoublePark helps you notify someone when you are double parked. This mobile app was written using MySQL, NodeJs, and React-Native.',
-        'tag': 'react',
+        'text': 'A collaboration with Nikita Voevodin, the TLC data Hub was built with R Shiny and published on behalf of the Taxi & Limousine Commission.',
+        'tag': 'data',
         'link': 'https://play.google.com/store/apps/details?id=com.vcoolstudio.doublePark&hl=en_US'
     },
     {

@@ -7,7 +7,7 @@ import classes from './experience.module.css';
 
 const Experience = props => {
     return (
-        <Row>
+        <Row className={classes.container}>
             <Col xs={4} className={classes.title}>Experience</Col>
             <Col className={classes.cards}>
                 <ExperienceCard 

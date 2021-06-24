@@ -8,7 +8,12 @@ import {
 import logo from '../assets/tennis-ball.png';
 import classes from './navbar.module.css';
 import Scroll from 'react-scroll';
+
+import resume from '../assets/fausto-lopez-resume.pdf';
+
 const Link = Scroll.Link;
+
+
 
 
 class NavBarC extends Component {
@@ -26,9 +31,12 @@ class NavBarC extends Component {
             </Nav>
             {/**RESUME **/}
             <Nav>
-              <Nav.Link>
-                <Link activeClass="" to="about" spy={true} smooth={true} duration={500} offset={-60}>Resume</Link>
-              </Nav.Link>
+           
+              <Nav.Link href={resume} download="fausto-lopez-resume.pdf">
+          
+                Resume
+             
+              </Nav.Link>       
             </Nav>
             {/**PROJECTS **/}
             <Nav>

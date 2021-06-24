@@ -8,6 +8,8 @@ import NavBarC from "./Navbar";
 import About from "./About";
 import Experience from "./Experience";
 import Projects from './Projects';
+import Contact from './Contact';
+import Footer from './Footer';
 
 const Home = props => {
     return (
@@ -19,6 +21,14 @@ const Home = props => {
              <Experience/>
              <br/>
              <Projects/>
+             <br/>
+             <Contact />
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <Footer />
+             <br/>
         </div>
     );
 };

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import ProjectCard from './smcomponents/ProjectCard';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row, ButtonGroup, ToggleButton } from 'react-bootstrap';
 
 import classes from './projects.module.css';
 
@@ -10,10 +10,46 @@ import { projects } from '../assets/data/projects';
 
 const Projects = (props) => {
 
+    const filters = [
+        { name: 'All', value: 'all' },
+        { name: 'Data', value: 'data' },
+        { name: 'React', value: 'react' },
+      ];
+    
+
+  const [checked, setChecked] = useState(false);
+  const [filterValue, setFilterValue] = useState('all');
+  const [projectsData, setProjectsData] = useState(projects)
+
+  const filterData = (value, myArray) => {
+     
+        setFilterValue(value);
+        console.log('filter value: ',value);
+
+      //filter the projects key
+      if (value == 'data' || value == 'react') {
+          const result =  myArray.filter(item => item.tag === value)
+          console.log(result);
+          setProjectsData(result);
+      } else {
+         const result = projects
+         console.log(result);
+         setProjectsData(result);
+      }   
+  }
+
+   useEffect(() => {
+       console.log('projects data has changed')
+  }, [projectsData]);
+
+
+
+  
+
     let cards = null;
-    if (projects) {
+    if (projectsData) {
       cards = (
-            projects.map((project, i) => {
+        projectsData.map((project, i) => {
               return <ProjectCard
                         key={i}
                         image={project.image}
@@ -26,10 +62,26 @@ const Projects = (props) => {
       )
     }
 
-
     return (
-            <Row id='projects'>
-                <Col xs={4} className={classes.title}>Projects</Col>
+            <Row id='projects' className={classes.container}>
+                <Col xs={4} className={classes.title}>
+                    <div>Projects</div>
+                    <ButtonGroup toggle>
+        {filters.map((filter, idx) => (
+          <ToggleButton
+            key={idx}
+            type="radio"
+            variant="secondary"
+            name="filter"
+            value={filter.value}
+            checked={filterValue === filter.value}
+            onChange={(e) => filterData(e.currentTarget.value, projects)}
+          >
+            {filter.name}
+          </ToggleButton>
+        ))}
+      </ButtonGroup>
+                </Col>
                 <Col className={classes.cards}>
                     <Row>
                         {cards}

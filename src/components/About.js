@@ -34,7 +34,7 @@ const About = props => {
             <Row>
                 <Col>
                 <div className={classes.panel}>
-                    <a><Image className={classes.icon} src={gmail} height={40} width={40} /></a>
+                    <a ><Image className={classes.icon} src={gmail} height={40} width={40} onClick={()=>window.open('mailto:faustolopez110@gmail.com?subject=Contact')} /></a>
                     <a href='https://www.linkedin.com/in/lopezfausto' target='_blank'><Image className={classes.icon}  src={linkedin} height={40} width={40} /></a>
                     <a href='https://github.com/datafaust' target='_blank'><Image className={classes.icon}  src={github} height={40} width={40} /></a>
                     <a href='https://gitlab.com/ulysses' target='_blank'><Image className={classes.icon}  src={gitlab} height={40} width={40} /></a>
