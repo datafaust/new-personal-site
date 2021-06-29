@@ -15,7 +15,6 @@ const Link = Scroll.Link;
 
 
 
-
 class NavBarC extends Component {
   render() {
     return (

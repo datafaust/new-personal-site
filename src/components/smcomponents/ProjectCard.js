@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
                 <Card.Img variant="top" src={props.image} className = {classes.image}/>
                 <Card.Body className={props.textClass} style = {{color:'black'}}>
                     <Card.Title>{props.title}</Card.Title>
-                    <Card.Text>
+                    <Card.Text className={classes.summary}>
                         {props.text}
                     </Card.Text>
                 </Card.Body>

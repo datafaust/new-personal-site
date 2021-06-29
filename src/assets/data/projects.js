@@ -2,11 +2,11 @@
 import datahub from '../../assets/tlcDataHub.jpg';
 import tlcdash from '../../assets/tlcFastDash.png';
 import linknyc from '../../assets/linknyc.jpeg';
-import ratInspector from '../../assets/ratInspector.jpg';
+import ratInspector from '../../assets/ratInspector.jpeg';
 import icarus from '../../assets/icarus.jpg';
 import dblPark from '../../assets/dblPark.jpg';
 import pooper from '../../assets/pooper.jpg';
-import citibike from '../../assets/citibike.jpg';
+import citibike from '../../assets/citibike.png';
 import verycool from '../../assets/veryCoolStudio.jpg';
 
 
@@ -28,7 +28,7 @@ export const projects = [
     },
     {
         'image': datahub,
-        'title': 'A DOUBLE PARKING APP IN REACT',
+        'title': 'TLC DATA HUB',
         'text': 'A collaboration with Nikita Voevodin, the TLC data Hub was built with R Shiny and published on behalf of the Taxi & Limousine Commission.',
         'tag': 'data',
         'link': 'https://play.google.com/store/apps/details?id=com.vcoolstudio.doublePark&hl=en_US'
@@ -42,7 +42,7 @@ export const projects = [
     },
     {
         'image': ratInspector,
-        'title': 'RATINSPECTOR: A WEBAPP TRACKING NYC’S BATTLE AGAINST THE RAT HORDES',
+        'title': 'RATINSPECTOR: NYC’S BATTLE AGAINST THE RAT HORDES',
         'text': 'Built in React JS and optimized for mobile, this webapp tracks metrics for rat inspections and showcases a live search from open data.',
         'tag': 'react',
         'link': 'https://datafaust.github.io/rodents-map/'
