@@ -6,8 +6,15 @@ import ratInspector from '../../assets/ratInspector.jpeg';
 import icarus from '../../assets/icarus.jpg';
 import dblPark from '../../assets/dblPark.jpg';
 import pooper from '../../assets/pooper.jpg';
-import citibike from '../../assets/citibike.png';
+import citibike from '../../assets/citibike.jpg';
 import verycool from '../../assets/veryCoolStudio.jpg';
+import shiny from '../../assets/shiny.png';
+import nhtsa from '../../assets/nhtsa.png';
+import clickHouse from '../../assets/clickHouse.jpg';
+import rPython from '../../assets/rPython.jpg';
+import tabix from '../../assets/tabix_main.png';
+import spark from '../../assets/spark.png';
+import computerViz from '../../assets/computerViz.png';
 
 
 
@@ -75,6 +82,69 @@ export const projects = [
         'tag': 'react',
         'link': 'https://datafaust.github.io/nyc-link/'
     },
-    
+    /**POSTS FROM BEFORE ADDED */
+    {
+        'image': nhtsa,
+        'title': 'CARSHOP: GETTING VEHICLE DATA WITH R',
+        'text': 'Building an R library to deal with the NHTSA api.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/nhtsa_api.md'
+    },
+    {
+        'image': rPython,
+        'title': 'CLICKHOUSE: ACCESS WITH R AND PYTHON',
+        'text': 'Learn how to access your clickhouse database with R and Python.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/access_clickhouse_r_python.md'
+    },
+    {
+        'image': clickHouse,
+        'title': 'CLICKHOUSE: A BILLION TAXI TRIPS IN A DATABASE',
+        'text': 'Learn how to leverage Yandexs clever clickhouse database to build a low resource analytical powerhouse with taxi data.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/clickhouse_billion_rides_wsl.md'
+    },
+    {
+        'image': clickHouse,
+        'title': 'CLICKHOUSE: CITIBIKE TRIPS IN A DATABASE',
+        'text': 'Learn how to leverage Yandexs clever clickhouse database to build a low resource analytical powerhouse with citibike data.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/clickhouse_citibike.md'
+    },
+    {
+        'image': computerViz,
+        'title': 'COMPUTER VISION: EXTRACTING IMAGES WITH R',
+        'text': 'Learn how to use R to extract images from the internet for analytical purposes.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/extracting_images_r.md'
+    },
+    {
+        'image': computerViz,
+        'title': 'COMPUTER VISION: EXTRACTING VIDEO WITH R AND PYTHON',
+        'text': 'Learn how to use R and Python to extract videos from the internet for analytical purposes.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/extracting_videos_r_python.md'
+    },
+    {
+        'image': shiny,
+        'title': 'SHINY SERVER: USING AN AWS',
+        'text': 'Learn how to setup a shiny server on an aws ec2 instance.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/setup_shiny_server.md'
+    },
+    {
+        'image': spark,
+        'title': 'SPARK: RUNNING A CLUSTER ON AWS',
+        'text': 'Learn how to run a spark cluster on aws.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/starting_spark_aws.md'
+    },
+    {
+        'image': tabix,
+        'title': 'TABIX: A SIMPLE UI FOR CLICKHOUSE',
+        'text': 'Learn how to leverage a simple UI for SQL queries on a clickhouse database.',
+        'tag': 'data',
+        'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/using_tabix_windows.md'
+    },
 
 ]
