@@ -15,6 +15,7 @@ import rPython from '../../assets/rPython.jpg';
 import tabix from '../../assets/tabix_main.png';
 import spark from '../../assets/spark.png';
 import computerViz from '../../assets/computerViz.png';
+import geohut from '../../assets/geohut.PNG';
 
 
 
@@ -145,6 +146,13 @@ export const projects = [
         'text': 'Learn how to leverage a simple UI for SQL queries on a clickhouse database.',
         'tag': 'data',
         'link': 'https://github.com/datafaust/new-personal-site-md/blob/main/documents/using_tabix_windows.md'
+    },
+    {
+        'image': geohut,
+        'title': 'GEOHUT: A LOCATION BASED WORK TRACKER in REACT NATIVE',
+        'text': 'Built in collaboration with Nikita Voevodin on behalf of verycool studio, this react native app was built to help construction not-for-profits track their placed hires.',
+        'tag': 'react',
+        'link': 'https://play.google.com/store/apps/details?id=com.vcoolstudio.geohut'
     },
 
 ]
