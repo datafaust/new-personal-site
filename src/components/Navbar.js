@@ -5,7 +5,7 @@ import {
   //NavDropdown
 } from 'react-bootstrap'
 // import {Link} from 'react-router-dom'
-import logo from '../assets/tennis-ball.png';
+//import logo from '../assets/tennis-ball.png';
 import classes from './navbar.module.css';
 import Scroll from 'react-scroll';
 

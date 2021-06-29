@@ -1,9 +1,4 @@
-import React, { Component } from "react";
-import {
-  Row,
-  Col,
-  Carousel
-} from "react-bootstrap";
+import React from "react";
 import NavBarC from "./Navbar";
 import About from "./About";
 import Experience from "./Experience";

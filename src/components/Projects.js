@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectCard from './smcomponents/ProjectCard';
 import { Col, Row, ButtonGroup, ToggleButton } from 'react-bootstrap';
 
@@ -17,7 +17,7 @@ const Projects = (props) => {
       ];
     
 
-  const [checked, setChecked] = useState(false);
+//   const [checked, setChecked] = useState(false);
   const [filterValue, setFilterValue] = useState('all');
   const [projectsData, setProjectsData] = useState(projects)
 
@@ -27,7 +27,7 @@ const Projects = (props) => {
         console.log('filter value: ',value);
 
       //filter the projects key
-      if (value == 'data' || value == 'react') {
+      if (value === 'data' || value === 'react') {
           const result =  myArray.filter(item => item.tag === value)
           console.log(result);
           setProjectsData(result);
