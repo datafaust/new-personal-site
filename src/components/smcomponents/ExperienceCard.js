@@ -12,12 +12,16 @@ const ExperienceCard = (props) => {
     return (
         <Card className={classes.cards}>
             <a href={props.link}>
-                <Card.Body className={props.textClass} style={{ color: 'black' }}>
-                    <Card.Title>{props.title}</Card.Title>
-                    <div className={classes.workplace}>{props.workplace}</div>
-                    <div className={classes.time}>{props.time}</div>
+                <Card.Body>
+                    <Card.Title className={classes.title}>
+                        {props.title}
+                    </Card.Title>
+                        <div className={classes.subtitle}>
+                            <div>{props.workplace}</div>
+                            <div>{props.time}</div>
+                        </div>
                     <br />
-                    <Card.Text>
+                    <Card.Text className={classes.summary}>
                         <ul>
                             <li>{props.text1}</li>
                             <li>{props.text2}</li>

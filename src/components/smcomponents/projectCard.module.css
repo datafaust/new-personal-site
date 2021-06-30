@@ -55,6 +55,7 @@
 
   .summary {
     font-size: .9em;
+    font-family: "Times New Roman", Times, serif;
   }
   
   @media only screen and (max-width: 650px) {
