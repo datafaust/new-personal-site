@@ -17,8 +17,8 @@ const Footer = props => {
             </Col>
             <Col>
             </Col>
-            <Col className={classes.text}>
-                <text>Built by Fausto Lopez in React</text>
+            <Col xs={6} className={classes.text}>
+                <text>Built very quickly by Fausto Lopez in React ;).</text>
             </Col>
             <Col className={classes.imageContainer}>
             <Link activeClass="" to="about" spy={true} smooth={true} duration={500} offset={-60}>

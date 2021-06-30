@@ -1,8 +1,10 @@
+
 .title {
     text-align: center;
     /* background-color: yellow; */
     font-size: 3.0em;
     margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 .cards {
     padding: 20px
@@ -15,7 +17,8 @@
         /* background-color: yellow; */
         font-size: 3.0em;
         margin-top: 10px;
-        margin-left: 29%
+        margin-left: 29%;
+        font-family: 'Open Sans', sans-serif;
     }
     .cards {
         padding: 20px

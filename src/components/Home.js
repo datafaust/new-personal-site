@@ -1,8 +1,10 @@
 import React from "react";
 import NavBarC from "./Navbar";
 import About from "./About";
+import Skills from './Skills';
 import Experience from "./Experience";
 import Projects from './Projects';
+import Presentations from './Presentations';
 import Contact from './Contact';
 import Footer from './Footer';
 
@@ -13,9 +15,13 @@ const Home = props => {
              
              <About/>
              <br/>
+             <Skills/>
+             <br/>
              <Experience/>
              <br/>
              <Projects/>
+             <br/>
+             <Presentations/>
              <br/>
              <Contact />
              <br/>

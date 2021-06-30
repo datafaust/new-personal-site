@@ -12,8 +12,8 @@ const ProjectCard = (props) => {
         <Card className={classes.cards} >
             <a href={props.link} target="_blank">
                 <Card.Img variant="top" src={props.image} className = {classes.image}/>
-                <Card.Body className={props.textClass} style = {{color:'black'}}>
-                    <Card.Title>{props.title}</Card.Title>
+                <Card.Body style = {{color:'black'}}>
+                    <Card.Title className={classes.title}>{props.title}</Card.Title>
                     <Card.Text className={classes.summary}>
                         {props.text}
                     </Card.Text>
@@ -24,3 +24,4 @@ const ProjectCard = (props) => {
 }
 
 export default ProjectCard;
+

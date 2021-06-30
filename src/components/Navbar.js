@@ -20,7 +20,7 @@ class NavBarC extends Component {
     return (
       <div>
         <Navbar className="fixed-top" collapseOnSelect expand="lg" style={{ backgroundColor: '#485671' }} variant="dark">
-          <Navbar.Brand href="#home" className={classes.title}>Fausto Lopez</Navbar.Brand>
+          <Navbar.Brand href="/" className={classes.title}>Fausto Lopez</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>

@@ -3,6 +3,8 @@ import { Row, Col, Image, Container } from 'react-bootstrap';
 
 import classes from './about.module.css';
 
+
+
 /**IMAGE LOADING */
 import gmail from '../assets/gmail.png';
 import github from '../assets/github.png';
@@ -35,14 +37,15 @@ const About = props => {
             <Row>
                 <Col>
                 <div className={classes.panel}>
-                    <a ><Image className={classes.icon} src={gmail} height={40} width={40} onClick={()=>window.open('mailto:faustolopez110@gmail.com?subject=Contact')} /></a>
-                    <a href='https://www.linkedin.com/in/lopezfausto' target='_blank'><Image className={classes.icon}  src={linkedin} height={40} width={40} /></a>
-                    <a href='https://github.com/datafaust' target='_blank'><Image className={classes.icon}  src={github} height={40} width={40} /></a>
-                    <a href='https://gitlab.com/ulysses' target='_blank'><Image className={classes.icon}  src={gitlab} height={40} width={40} /></a>
-                    <a href={resume} download="fausto-lopez-resume.pdf"><Image className={classes.icon}  src={cv} height={40} width={40} /></a>
+                    <a ><Image className={classes.icon} src={gmail} height={50} width={50} onClick={()=>window.open('mailto:faustolopez110@gmail.com?subject=Contact')} /></a>
+                    <a href='https://www.linkedin.com/in/lopezfausto' target='_blank'><Image className={classes.icon}  src={linkedin} height={50} width={50} /></a>
+                    <a href='https://github.com/datafaust' target='_blank'><Image className={classes.icon}  src={github} height={50} width={50} /></a>
+                    <a href='https://gitlab.com/ulysses' target='_blank'><Image className={classes.icon}  src={gitlab} height={50} width={50} /></a>
+                    <a href={resume} download="fausto-lopez-resume.pdf"><Image className={classes.icon}  src={cv} height={50} width={50} /></a>
                 </div>
                 </Col>
             </Row>
+            
         </Container>
     );
 };
