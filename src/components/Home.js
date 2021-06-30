@@ -4,7 +4,7 @@ import About from "./About";
 import Skills from './Skills';
 import Experience from "./Experience";
 import Projects from './Projects';
-import Presentations from './Presentations';
+//import Presentations from './Presentations';
 import Contact from './Contact';
 import Footer from './Footer';
 
@@ -21,8 +21,8 @@ const Home = props => {
              <br/>
              <Projects/>
              <br/>
-             <Presentations/>
-             <br/>
+             {/* <Presentations/>
+             <br/> */}
              <Contact />
              <br/>
              <br/>

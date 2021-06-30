@@ -13,7 +13,7 @@ const  Skills = props => {
             </Row>
             <Row>
                 <Col xs={12} className={classes.skillsContainer}>
-                    R, Python, Reactjs, React Native, Node, Mysql, Sql Server, Spark, AWS, Azure
+                    R, Python, Reactjs, React Native, Node, Mysql, Sql Server, Spark, AWS, Azure, Clickhouse
                 </Col>
             </Row>
 
