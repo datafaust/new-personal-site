@@ -7,6 +7,29 @@ import classes from './projects.module.css';
 /**LOAD PROJECTS DATA */
 import { projects } from '../assets/data/projects';
 
+  //FUNCTION: SORT
+  const compare = ( a, b ) => {
+    if ( a.date < b.date ){
+      return -1;
+    }
+    if ( a.date > b.date ){
+      return +1;
+    }
+    return 0;
+  }
+
+  //FUNCTION: REVERSE SORT
+  const compareReverse = ( a, b ) => {
+    if ( a.date < b.date ){
+      return +1;
+    }
+    if ( a.date > b.date ){
+      return -1;
+    }
+    return 0;
+  }
+
+
 
 const Projects = (props) => {
 
@@ -19,7 +42,9 @@ const Projects = (props) => {
 
 //   const [checked, setChecked] = useState(false);
   const [filterValue, setFilterValue] = useState('all');
-  const [projectsData, setProjectsData] = useState(projects)
+  const [projectsData, setProjectsData] = useState(projects.sort(compare))
+
+
 
   const filterData = (value, myArray) => {
      
@@ -30,11 +55,11 @@ const Projects = (props) => {
       if (value === 'data' || value === 'react') {
           const result =  myArray.filter(item => item.tag === value)
           console.log(result);
-          setProjectsData(result);
+          setProjectsData(result.sort(compareReverse));
       } else {
          const result = projects
          console.log(result);
-         setProjectsData(result);
+         setProjectsData(result.sort(compareReverse));
       }   
   }
 
